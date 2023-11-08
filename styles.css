@@ -14,12 +14,12 @@ main {
   width: 100vw;
   display: flex;
   background: linear-gradient(
-      25deg,
-      rgb(20, 142, 173) 0%,
-      rgb(20, 142, 173) 2%,
-      rgb(119, 23, 193) 47%,
-      rgb(119, 23, 193) 100%
-    );
+    25deg,
+    rgb(20, 142, 173) 0%,
+    rgb(20, 142, 173) 2%,
+    rgb(119, 23, 193) 47%,
+    rgb(119, 23, 193) 100%
+  );
   background-size: cover;
   background-position: center;
   background-blend-mode: multiply;
@@ -40,12 +40,12 @@ main {
   gap: 1.5rem;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
-p{
-  color: rgb(255, 255, 255);
+p {
+  color: rgb(43, 42, 42);
 }
 
 form {
