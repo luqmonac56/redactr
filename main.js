@@ -18,7 +18,7 @@ function handleAddHiddenWord(e) {
     e.keyCode === 13
   ) {
     e.preventDefault();
-    toBeHidden.push(hideWord.value);
+    toBeHidden.push(hideWord.value.toLowerCase());
     hideWord.value = "";
     obj = Object.assign({}, toBeHidden);
 
@@ -37,7 +37,7 @@ function handleClick(e) {
 
   const regex = new RegExp(Object.values(obj).join("|"), "g");
 
-  const replacedSentence = message.value.replace(regex, replacement.value);
+  const replacedSentence = message.value.toLowerCase().replace(regex, replacement.value);
 
   displaySentence.innerText = replacedSentence;
   message.value = replacedSentence;
