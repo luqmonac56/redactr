@@ -40,6 +40,7 @@ function handleClick(e) {
   const replacedSentence = message.value.replace(regex, replacement.value);
 
   displaySentence.innerText = replacedSentence;
+  message.value = replacedSentence;
 
   console.log(replacedSentence);
   console.log(message);
