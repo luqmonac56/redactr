@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Redactr</title>
+  </head>
+  <body>
+    <main>
+      <div class="inner-div">
+        <div class="first_inner_div">
+          <h1>Word Scrambler</h1>
+        </div>
+        <form
+          onSubmit="e.preventDefault()"
+        >
+          <textarea id="message" name="message"></textarea>
+          <input
+            id="hide-word"
+            type="text"
+            placeholder="Insert the word to be scrambled here"
+          />
+          <p id="display-word"></p>
+          <input
+            id="replacement"
+            type="text"
+            placeholder="Insert the character to be used as replacement here"
+          />
+          <button id="action-button">Redact Now</button>
+        </form>
+        <p id="display-sentence"></p>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
